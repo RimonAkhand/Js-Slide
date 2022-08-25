@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    min-height: 80px;
+    background-color: black;
+
+}
+
+nav span{
+    height: 80px;
+    display: block;
+    width: 50px;
+    background-color: bisque;
+    color: black;
+    margin: 0 50px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+.togglerbtn{
+    color: blueviolet;
+}
+
+.sidebar{
+    width: 300px;
+    padding: 20px 40px;
+    font-family: Arial;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height:calc(100vh - 80px);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .6s;
+
+
+}
+.activeSidebar{
+    transform: scaleX(1);
+}
